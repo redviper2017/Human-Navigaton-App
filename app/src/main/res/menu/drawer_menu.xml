@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_but"
+        android:icon="@drawable/ic_buy_black_24dp"
+        android:title="Buy A Copy" />
+
+    <item android:title="Posts By Hlumelo">
+        <menu>
+            <group android:id="@+id/posts_hn"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_today_post_hn"
+                    android:icon="@drawable/ic_today_black_24dp"
+                    android:title="Today's Post" />
+                <item
+                    android:id="@+id/nav_all_post_hn"
+                    android:icon="@drawable/ic_all_black_24dp"
+                    android:title="All Posts" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Posts By Community">
+        <menu>
+            <group android:id="@+id/posts_community"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_quotes_community"
+                    android:icon="@drawable/ic_quote_black_24dp"
+                    android:title="Quotes" />
+                <item
+                    android:id="@+id/nav_stories_community"
+                    android:icon="@drawable/ic_story_black_24dp"
+                    android:title="Stories" />
+                <item
+                    android:id="@+id/nav_poems_community"
+                    android:icon="@drawable/ic_poem_black_24dp"
+                    android:title="Poems"/>
+                <item
+                    android:id="@+id/nav_pictures_community"
+                    android:icon="@drawable/ic_image_black_24dp"
+                    android:title="Pictures"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Human Navigation App">
+        <menu>
+            <group android:id="@+id/about"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_fav"
+                    android:icon="@drawable/ic_favorite_black_24dp"
+                    android:title="Favorites"/>
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_about_black_24dp"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/contact_icon_24dp"
+                    android:title="Contact Us" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/nav_sign_out"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Sign Out"/>
+
+</menu>
